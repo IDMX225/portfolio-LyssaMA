@@ -2,6 +2,8 @@
 @use "./base/reset";
 @use "./base/typography";
 
+
+
 // Font Face Declarations
 @font-face {
   font-family: 'Epilogue';
@@ -11,6 +13,7 @@
 }
 
 @font-face {
+
   font-family: 'Rammetto One';
   src: url('/fonts/RammettoOne-Regular.ttf') format('truetype');
   font-weight: normal;
@@ -32,6 +35,8 @@ $neutral-light: #b1926f; // Light brown
 $neutral-dark: #1e1e1e; // Almost black
 $medium-brown: #b26834; // Saddle Brown
 $dark-brown: #3b2e2e; // Dark Brown
+$primary-dark: hsl(0, 3%, 6%); // Blackish
+
 
 /* ///////////////////////
 General styling
@@ -60,9 +65,7 @@ General styling
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Centers the items horizontally */
   text-align: center;
-  /* Ensures text is centered */
 }
 
 .header-logo {
@@ -479,6 +482,34 @@ Article snippets
   }
 }
 
+@media screen and (width <=1024px) {
+
+  .container,
+  section {
+    padding-inline: 0;
+  }
+
+  .inner-container {
+    padding-inline: 2vw;
+    border-radius: 0;
+  }
+
+  .projects .mp-projects__paragraph {
+    margin-inline: 0;
+    padding-inline: 1vw;
+  }
+
+  .about p.text-center {
+    text-align: left;
+    padding-inline: 2vw;
+  }
+
+  body {
+    color: $primary-dark; // hsl(0, 3%, 6%)
+  }
+}
+
+
 /* ///////////////////////
 Buttons
 /////////////////////// */
@@ -545,9 +576,9 @@ Buttons
 
 .btn--resume:hover,
 .btn--resume:focus {
-  background: $dark-brown; 
-  border-color: $dark-brown; 
-  color: $accent-color-2; 
+  background: $dark-brown;
+  border-color: $dark-brown;
+  color: $accent-color-2;
 }
 
 .flex-group {
