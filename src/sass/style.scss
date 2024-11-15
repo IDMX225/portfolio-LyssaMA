@@ -533,44 +533,61 @@ Buttons
 }
 
 .btn:focus {
-  outline: 0.125em solid $accent-color-2; // Gold
+  outline: 0.125em solid $accent-color-2;
+  /* Gold */
   outline-offset: 0.25em;
 }
 
+/* Primary Button Style */
 .btn--primary {
-  background: $accent-color-2; // Gold
-  color: $dark-brown; // Dark Brown
+  background: $accent-color-2;
+  /* Gold */
+  color: $dark-brown;
+  /* Dark Brown */
   font-weight: var(--fw-700);
-  border: 4px solid $accent-color-2; // Gold
+  border: 4px solid $accent-color-2;
+  /* Gold */
   margin-bottom: 4em;
 }
 
 .btn--primary:hover,
 .btn--primary:focus {
-  background: $dark-brown; // Dark Brown
-  border-color: $dark-brown; // Dark Brown
-  color: $accent-color-2; // Gold
+  background: $dark-brown;
+  /* Dark Brown */
+  border-color: $dark-brown;
+  /* Dark Brown */
+  color: $accent-color-2;
+  /* Gold */
 }
 
 .btn--neutral {
-  background-color: $neutral-light; // Light brown 
-  color: $primary-color; // Charcoal Gray
+  background-color: $neutral-light;
+  /* Light brown */
+  color: $primary-color;
+  /* Charcoal Gray */
   font-weight: var(--fw-700);
-  border: 4px solid $primary-color; // Charcoal Gray
+  border: 4px solid $primary-color;
+  /* Charcoal Gray */
   margin-bottom: 4em;
 }
 
 .btn--neutral:hover,
 .btn--neutral:focus {
-  color: $neutral-light; // Light brown
-  background-color: $primary-color; // Charcoal Gray
+  color: $neutral-light;
+  /* Light brown */
+  background-color: $primary-color;
+  /* Charcoal Gray */
 }
 
+/* Resume Button Style */
 .btn--resume {
-  background: $accent-color-2; // Gold 
-  color: $dark-brown; // Dark Brown 
+  background: $accent-color-2;
+  /* Gold */
+  color: $dark-brown;
+  /* Dark Brown */
   font-weight: var(--fw-700);
-  border: 4px solid $accent-color-2; // Gold 
+  border: 4px solid $accent-color-2;
+  /* Gold */
   margin: 4em 0;
 }
 
@@ -581,6 +598,7 @@ Buttons
   color: $accent-color-2;
 }
 
+/* Flex Layout for Buttons */
 .flex-group {
   display: flex;
   justify-content: center;
@@ -589,9 +607,11 @@ Buttons
   margin-bottom: 2em;
 }
 
+/* Projects Section */
 .projects {
   .mp-projects__title {
-    color: $accent-color-3; // Light Orange
+    color: $accent-color-3;
+    /* Light Orange */
     font-size: 2em;
     margin: 2em 0;
   }
@@ -605,6 +625,7 @@ Buttons
   }
 }
 
+/* Buttons for Projects */
 .project-item a {
   margin: 2em 0;
   text-decoration: none;
@@ -614,10 +635,10 @@ Buttons
   text-decoration: none;
 }
 
-
-
+/* Footer Link Style */
 .footer-link {
-  color: $accent-color-2; // Gold
+  color: $accent-color-2;
+  /* Gold */
   text-decoration: none;
 }
 
@@ -625,6 +646,7 @@ Buttons
   text-decoration: underline;
 }
 
+/* Footer Logo */
 .site-footer img.logo {
   vertical-align: middle;
   margin-left: 0.5rem;
