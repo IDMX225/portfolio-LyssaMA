@@ -2,8 +2,6 @@
 @use "./base/reset";
 @use "./base/typography";
 
-
-
 // Font Face Declarations
 @font-face {
   font-family: 'Epilogue';
@@ -13,7 +11,6 @@
 }
 
 @font-face {
-
   font-family: 'Rammetto One';
   src: url('/fonts/RammettoOne-Regular.ttf') format('truetype');
   font-weight: normal;
@@ -30,13 +27,12 @@
 $primary-color: #343131; // Charcoal Gray
 $accent-color-1: #A04747; // Red
 $accent-color-2: #d49241; // Gold
-$accent-color-3: #ffe4b3; // Light Orange 
-$neutral-light: #b1926f; // Light brown 
+$accent-color-3: #ffe4b3; // Light Orange
+$neutral-light: #b1926f; // Light brown
 $neutral-dark: #1e1e1e; // Almost black
 $medium-brown: #b26834; // Saddle Brown
 $dark-brown: #3b2e2e; // Dark Brown
 $primary-dark: hsl(0, 3%, 6%); // Blackish
-
 
 /* ///////////////////////
 General styling
@@ -75,10 +71,47 @@ General styling
 
 .true-poet-title {
   text-align: center;
-  font-size: 3em;
+  font-size: clamp(2rem, 5vw, 4rem);
   white-space: nowrap;
   margin-top: 2em;
+  padding: 0 2rem;
+  width: 100%;
+  overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  .true-poet-title {
+    font-size: clamp(1.8rem, 4vw, 3.5rem);
+    padding: 0 1.5rem;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .true-poet-title {
+    font-size: 2rem;
+    white-space: normal;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 810px) {
+  .true-poet-title {
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
+    padding: 0 2rem;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 800px) {
+  .true-poet-title {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    /* screen size 800 x 1280 */
+    padding: 0 2rem;
+    white-space: normal;
+  }
+}
+
 
 .tp {
   display: block;
@@ -345,6 +378,12 @@ header,
   text-decoration: underline;
 }
 
+/* Footer Logo */
+.site-footer img.logo {
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
 /* ///////////////////////
 Homepage
 /////////////////////// */
@@ -482,33 +521,37 @@ Article snippets
   }
 }
 
-@media screen and (width <=1024px) {
+@media screen and (max-width: 1024px) {
 
   .container,
   section {
-    padding-inline: 0;
+    padding-inline: 1.5em;
+    box-sizing: border-box;
   }
 
   .inner-container {
-    padding-inline: 2vw;
+    padding: 1.5em;
     border-radius: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
 
   .projects .mp-projects__paragraph {
     margin-inline: 0;
-    padding-inline: 1vw;
+    padding-inline: 2em;
+    font-size: 1rem;
   }
 
   .about p.text-center {
     text-align: left;
-    padding-inline: 2vw;
+    padding-inline: 2em;
   }
 
   body {
     color: $primary-dark; // hsl(0, 3%, 6%)
   }
 }
-
 
 /* ///////////////////////
 Buttons
@@ -600,11 +643,8 @@ Buttons
 
 /* Flex Layout for Buttons */
 .flex-group {
-  display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 1em;
-  margin-bottom: 2em;
 }
 
 /* Projects Section */
