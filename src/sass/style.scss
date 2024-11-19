@@ -63,7 +63,7 @@ General styling
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .header-logo {
@@ -108,7 +108,6 @@ General styling
 @media (max-width: 1024px) and (min-width: 800px) {
   .true-poet-title {
     font-size: clamp(2rem, 4vw, 3.2rem);
-    /* screen size 800 x 1280 */
     padding: 0 2rem;
     white-space: normal;
   }
@@ -116,12 +115,12 @@ General styling
 
 .tp {
   display: flex;
-  justify-content: center; 
-  align-items: center;     
-  text-align: center;      
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin: 2em 0;
-  min-height: 300px;       
-  width: 100%;           
+  min-height: 300px;
+  width: 100%;
 }
 
 @media (max-width: 30em) {
@@ -649,7 +648,7 @@ Buttons
 /* Flex Layout for Buttons */
 .flex-group {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   width: 100%;
 }
 
