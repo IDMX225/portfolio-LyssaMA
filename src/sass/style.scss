@@ -53,6 +53,7 @@ General styling
 }
 
 .hero__image {
+  width: 100%;
   text-align: center;
   margin: 2em 0;
 }
@@ -62,6 +63,7 @@ General styling
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center; 
 }
 
 .header-logo {
@@ -112,11 +114,14 @@ General styling
   }
 }
 
-
 .tp {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;      
   margin: 2em 0;
+  min-height: 300px;       
+  width: 100%;           
 }
 
 @media (max-width: 30em) {
@@ -643,7 +648,8 @@ Buttons
 
 /* Flex Layout for Buttons */
 .flex-group {
-  justify-content: center;
+  display: flex;
+  justify-content: center;  
   width: 100%;
 }
 
