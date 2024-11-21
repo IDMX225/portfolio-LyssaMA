@@ -329,21 +329,42 @@ Header
 }
 
 .nav-list {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 1.5rem;            
+  flex-wrap: wrap;
+  font-family: var(--ff-body);  
+  font-size: 18pt;    
+  letter-spacing: 2px;   
+  padding-right: 20px;  
 }
 
 .nav-list a {
-  color: $accent-color-3; // Light Orange
-  text-decoration: none;
+  color: $dark-brown; /* Dark Brown */
+  text-decoration: underline;
+  padding: 1rem 1rem;   
+  white-space: nowrap;
+  font-family: var(--ff-body);
+  font-size: 18pt;  
+  letter-spacing: 2px;   
+  padding-right: 20px;
 }
 
 .nav-list a:focus,
 .nav-list a:hover {
   color: $accent-color-1; // Red
-  text-decoration: none;
+  text-decoration: underline, bold;
+  font-family: var(--ff-body);
 }
 
+/* For smaller screen sizes */
+@media (max-width: 768px) {
+  .nav-list {
+    justify-content: flex-start; 
+    flex-wrap: wrap;             
+  }
+}
 /* ///////////////////////
 Footer
 /////////////////////// */
