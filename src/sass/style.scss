@@ -1,3 +1,4 @@
+@use './forms';
 @use "./abstracts/variables";
 @use "./base/reset";
 @use "./base/typography";
@@ -234,12 +235,6 @@ section {
 Utility Classes
 /////////////////////// */
 
-.flex-group {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  margin-top: 1em;
-}
 
 .flow>*:where(:not(:first-child)) {
   margin-top: var(--flow-spacer, 1em);
@@ -265,8 +260,16 @@ Utility Classes
 
 .flex-group {
   display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1em;
   flex-wrap: wrap;
-  gap: var(--gap, 1em);
+}
+
+@media (max-width: 768px) {
+  .flex-group {
+    justify-content: flex-start; 
+  }
 }
 
 .text-center {
@@ -526,7 +529,6 @@ Article snippets
 }
 
 @media screen and (max-width: 1024px) {
-
   .container,
   section {
     padding-inline: 1.5em;
@@ -695,4 +697,102 @@ Buttons
 .site-footer img.logo {
   vertical-align: middle;
   margin-left: 0.5rem;
+}
+
+/* Style for contact form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: var(--ff-body);
+}
+
+/* Style for labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #1f0904;
+  font-family: var(--ff-body);
+}
+
+/* Style for input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #462302;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #1f0904;
+  font-family: var(--ff-body);
+}
+
+/* Style for textarea */
+textarea {
+  resize: vertical;
+  height: 150px;
+  font-family: var(--ff-body);
+}
+
+/* Style for send button */
+button {
+  padding: 12px 20px;
+  background-color: #f19e40;
+  color: rgba(216, 145, 13, 0.877);
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: var(--ff-body);
+}
+
+/* Hover effect for button */
+button:hover {
+  background-color: #41250c;
+}
+
+/* Contact Us Button */
+.btn-contact {
+  margin-top: 5em;
+}
+
+.error {
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    font-family: var(--ff-body);
+  }
+}
+
+/* Logo for contact page */
+.contact-logo-container {
+  text-align: center;
+  margin-top: 140px;
+  width: 100%;
+}
+
+.contact-logo {
+  display: block;
+  margin: 0 auto;
+  width: 240px !important;
+  height: 200px;
+}
+
+.contact-page .tp .hero__image {
+  width: 200%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .contact-page .tp .hero__image {
+    width: 150%;
+  }
 }

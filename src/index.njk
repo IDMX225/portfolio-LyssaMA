@@ -6,14 +6,14 @@ layout: 'base.njk'
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>True Poet Digital Designs: Portfolio</title>
+  <title>{{ title }}</title>
 
   <!-- Favicon -->
-<link rel="icon" href="assets/TP GOLD TRIM (4K x 4K).svg" type="image/svg+xml">
-<!-- for older browser support -->
-<link rel="icon" href="images/TP GOLD TRIM (4K x 4K).png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/TP GOLD TRIM (4K x 4K).svg" type="image/svg+xml">
+  <link rel="icon" href="images/TP GOLD TRIM (4K x 4K).png" sizes="32x32" type="image/png">
 
-
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <section class="hero">
@@ -88,6 +88,15 @@ layout: 'base.njk'
     <!-- Resume Button -->
     <div class="flex-group">
       <a href="/assets/AA Resume 2024.pdf" class="btn btn--primary btn--resume">Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact link -->
+<section id="contact-link">
+  <div class="container flow">
+    <div class="flex-group align-center">
+      <a href="/contact" class="btn btn--primary">Contact Us</a>
     </div>
   </div>
 </section>
