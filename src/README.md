@@ -42,3 +42,19 @@ You can download my current resume below:
 For further information, feel free to contact us via the link below:
 
 [Contact Us](/contact)
+
+
+Sources: photos
+
+
+website: 
+Photo by Lukas from Pexels: https://www.pexels.com/photo/laptop-computer-showing-c-application-574069/
+
+Games:
+https://pixabay.com/illustrations/video-game-gamepad-control-play-3d-1856991/
+
+Graphic Design: 
+https://www.freepik.com/free-vector/set-vector-icons-elements-application-development_1215748.htm#fromView=search&page=5&position=20&uuid=15ad6dfe-d669-49aa-be2b-df5ba6b78c95
+
+UX:
+https://pixabay.com/illustrations/message-mail-internet-ui-ux-email-5765634/

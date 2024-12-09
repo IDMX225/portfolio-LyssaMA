@@ -703,6 +703,33 @@ Buttons
   text-decoration: none;
 }
 
+/* Games container */
+.games-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  padding: 0 1rem; 
+}
+
+/* Style for the game image */
+.games-image {
+  width: 100%; 
+  height: auto; 
+  display: block; 
+}
+
+@media (max-width: 768px) {
+  .games-container {
+    padding: 0 1rem; 
+  }
+
+  .games-image {
+    width: 100%; 
+    height: auto;
+  }
+}
+
 /* Footer Link Style */
 .footer-link {
   color: $accent-color-2;
