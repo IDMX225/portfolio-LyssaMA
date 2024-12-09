@@ -712,22 +712,47 @@ Buttons
   padding: 0 1rem; 
 }
 
-/* Style for the game image */
-.games-image {
-  width: 100%; 
-  height: auto; 
-  display: block; 
+/* Image containers */
+.graphicdesigns-icon-container, 
+.games-icon-container, 
+.websites-icon-container, 
+.uidesigns-icon-container {
+  display: flex;               
+  justify-content: center;      
+  align-items: center;          
+  margin: 0 auto;               
+  width: 100%;                 
 }
 
-@media (max-width: 768px) {
-  .games-container {
-    padding: 0 1rem; 
-  }
+/* Match UI image */
+.graphicdesigns-icon, 
+.games-icon, 
+.websites-icon, 
+.uidesigns-icon {
+  max-width: 100%;             
+  object-fit: contain;        
+}
 
-  .games-image {
-    width: 100%; 
-    height: auto;
-  }
+/* Websites and Games icons */
+.websites-icon, 
+.games-icon {
+  max-height: 300px;       
+  width: auto;    
+  margin-bottom: 140px; 
+}
+
+/* UI Design image size  */
+.uidesigns-icon {
+  max-height: 300px;            
+  width: auto;                 
+  margin-bottom: 100px !important; 
+}
+
+/* Graphic Designs image size */
+.graphicdesigns-icon {
+  max-height: 200px;        
+  width: auto;                 
+  margin-bottom: 120px !important; 
 }
 
 /* Footer Link Style */

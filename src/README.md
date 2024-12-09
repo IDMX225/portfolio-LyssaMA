@@ -97,6 +97,10 @@ For further information, feel free to contact us via the link below:
 - Photos:  
   Photo by Lukas from Pexels: [Link](https://www.pexels.com/photo/laptop-computer-showing-c-application-574069/)
   
+
+ - Websites:  
+ [Icon by Freepik](https://www.freepik.com/free-vector/www-internet-globe-grid_43855963.htm#fromView=search&page=1&position=2&uuid=d4ee1e1a-4c54-4b4b-b502-b5f59e619e92)
+
 - Games:  
   [Video game icon by Pixabay](https://pixabay.com/illustrations/video-game-gamepad-control-play-3d-1856991/)
   
